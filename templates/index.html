@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome | ML Project</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 20px;
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 40px 30px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 12px 35px rgba(0,0,0,0.2);
+            width: 100%;
+            max-width: 420px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 12px;
+            font-size: clamp(22px, 5vw, 28px);
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: clamp(14px, 4vw, 16px);
+        }
+
+        button {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 12px 28px;
+            font-size: 16px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            max-width: 260px;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+        }
+
+        /* Tablet */
+        @media (min-width: 600px) {
+            .container {
+                padding: 45px;
+            }
+        }
+
+        /* Desktop */
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 460px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome </h1>
+        <p>Student Performance Prediction System</p>
+
+        <button onclick="goToHome()">Go to Prediction Page</button>
+    </div>
+
+    <script>
+        function goToHome() {
+            window.location.href = "/predictdata";
+        }
+    </script>
+
+</body>
+</html>
